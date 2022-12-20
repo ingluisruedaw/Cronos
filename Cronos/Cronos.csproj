@@ -12,7 +12,20 @@
 	<Product>Cronos</Product>
 	<Description>Cronos is a Dot Net 7 Library, write File Log of System errors.</Description>
 	<Copyright>Copyright © Luis Domingo Rueda Wilches 2022</Copyright>
+	<RepositoryUrl>https://github.com/ingluisruedaw/Cronos</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<AnalysisLevel>latest</AnalysisLevel>
+	<EnableNETAnalyzers>True</EnableNETAnalyzers>
   </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="..\README.md">
+	  <Pack>True</Pack>
+	  <PackagePath>\</PackagePath>
+	</None>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Resources\LogConfiguration.Designer.cs">
