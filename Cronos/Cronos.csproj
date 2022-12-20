@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<PackageId>Cronos</PackageId>
+	<Title>Cronos</Title>
+	<Version>1.0.0</Version>
+	<Authors>Luis Domingo Rueda Wilches</Authors>
+	<Company>Luis Domingo Rueda Wilches</Company>
+	<Product>Cronos</Product>
+	<Description>Cronos is a Dot Net 7 Library, write File Log of System errors.</Description>
+	<Copyright>Copyright © Luis Domingo Rueda Wilches 2022</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\LogConfiguration.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LogConfiguration.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\LogConfiguration.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogConfiguration.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
